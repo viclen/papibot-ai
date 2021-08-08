@@ -74,4 +74,4 @@ reddit/RS_%.bz2:
 
 reddit/RC_%.bz2:
 	mkdir -p reddit
-	wget https://files.pushshift.io/reddit/comments/RC_$(*F).bz2 -O reddit/RC_$(*F).bz2 -o logs/RC_$(*F).bz2.log -c
+	wget http://files.pushshift.io/reddit/comments/RC_$(*F).bz2 -O reddit/RC_$(*F).bz2 -o logs/RC_$(*F).bz2.log -c
