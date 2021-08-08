@@ -70,7 +70,7 @@ data-official/.create:
 
 reddit/RS_%.bz2:
 	mkdir -p reddit
-	wget https://files.pushshift.io/reddit/submissions/RS_$(*F).bz2 -O reddit/RS_$(*F).bz2 -o logs/RS_$(*F).bz2.log -c
+#	wget https://files.pushshift.io/reddit/submissions/RS_$(*F).bz2 -O reddit/RS_$(*F).bz2 -o logs/RS_$(*F).bz2.log -c
 
 reddit/RC_%.bz2:
 	mkdir -p reddit
