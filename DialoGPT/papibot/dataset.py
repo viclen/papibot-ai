@@ -26,7 +26,7 @@ class ConversationDataset(Dataset):
     def __init__(self, tokenizer: PreTrainedTokenizer, args, df, block_size=512):
 
         block_size = block_size - \
-            (tokenizer.max_len - tokenizer.max_len_single_sentence)
+            (tokenizer.model_max_length - tokenizer.max_len_single_sentence)
 
         directory = args.cache_dir
         cached_features_file = os.path.join(
