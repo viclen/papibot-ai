@@ -14,11 +14,11 @@ from transformers import (
 
 class Args():
     def __init__(self):
-        self.output_dir = 'output-small'
+        self.output_dir = 'output-medium'
         self.model_type = 'gpt2'
-        self.model_name_or_path = 'microsoft/DialoGPT-small'
-        self.config_name = 'microsoft/DialoGPT-small'
-        self.tokenizer_name = 'microsoft/DialoGPT-small'
+        self.model_name_or_path = 'microsoft/DialoGPT-medium'
+        self.config_name = 'microsoft/DialoGPT-medium'
+        self.tokenizer_name = 'microsoft/DialoGPT-medium'
         self.cache_dir = 'cached'
         self.block_size = 512
         self.do_train = True
