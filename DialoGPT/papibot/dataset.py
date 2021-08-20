@@ -1,3 +1,4 @@
+from model import *
 import glob
 import os
 import pickle

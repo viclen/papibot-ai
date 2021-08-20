@@ -1,3 +1,5 @@
+from dataset import *
+from model import *
 import os
 from typing import Dict, List, Tuple
 
@@ -14,6 +16,8 @@ from transformers import (
     PreTrainedTokenizer,
     get_linear_schedule_with_warmup,
 )
+
+logger = logging.getLogger(__name__)
 
 def train(args, train_dataset, model: PreTrainedModel, tokenizer: PreTrainedTokenizer) -> Tuple[int, float]:
     """ Train the model """
