@@ -16,7 +16,7 @@ def chat(model_size="medium"):
     step = 0
 
     while user_input != "exit":
-        user_input = input(">> User:")
+        user_input = input(">> User: ")
 
         # encode the new user input, add the eos_token and return a tensor in Pytorch
         new_user_input_ids = tokenizer.encode(
@@ -37,7 +37,7 @@ def chat(model_size="medium"):
         )
 
         # pretty print last ouput tokens from bot
-        print("RickBot: {}".format(tokenizer.decode(
+        print("Papibot: {}".format(tokenizer.decode(
             chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)))
 
         step += 1

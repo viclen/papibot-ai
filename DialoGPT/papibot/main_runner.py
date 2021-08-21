@@ -23,7 +23,7 @@ class Args():
         self.config_name = 'microsoft/DialoGPT-medium'
         self.tokenizer_name = 'microsoft/DialoGPT-medium'
         self.cache_dir = 'cached'
-        self.block_size = 62
+        self.block_size = 512
         self.do_train = True
         self.do_eval = True
         self.evaluate_during_training = False
