@@ -5,3 +5,4 @@ tqdm
 torch==1.4.0
 torchvision
 pycrypto
+pytorch_pretrained_bert
