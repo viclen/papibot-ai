@@ -1,4 +1,4 @@
-from model import *
+from model import logger
 import glob
 import os
 import pickle

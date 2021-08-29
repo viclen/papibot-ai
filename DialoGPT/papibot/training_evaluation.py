@@ -1,5 +1,5 @@
 from dataset import load_and_cache_examples, set_seed, _rotate_checkpoints
-from model import *
+from model import logging, SummaryWriter
 import os
 from typing import Dict, List, Tuple
 
